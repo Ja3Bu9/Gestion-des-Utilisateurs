@@ -1,16 +1,17 @@
 package com.gestion.models;
 
-
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Profil {
+	private static final AtomicInteger count = new AtomicInteger(0);
 	private int id;
 	private int code;
 	private String libelle;
 	
 	
-	public Profil(int id, int code, String libelle) {
+	public Profil(int code, String libelle) {
 		super();
-		this.id = id;
+		this.id = count.incrementAndGet();
 		this.code = code;
 		this.libelle = libelle;
 	}

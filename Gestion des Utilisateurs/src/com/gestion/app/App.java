@@ -9,18 +9,15 @@ public class App {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ArrayList<Profil> profilList = new ArrayList<Profil>();
-		ArrayList<String> serviceslList = new ArrayList<String>();
+	
 		ArrayList<Utilisateur> listUsers = new ArrayList<Utilisateur>();
 		ArrayList<Double> listSalaires = new ArrayList<Double>();
 		
-		Profil p1 = new Profil(1,1234,"MN");
-		Profil p2 = new Profil(2,1234,"CP");
-		Profil p3 = new Profil(3,1234,"DP");
-		Profil p4 = new Profil(4,1234,"DG");
-		Profil p5 = new Profil(5,1234,"DRH");
-		
-
+		Profil p1 = new Profil(1234,"MN");
+		Profil p2 = new Profil(1234,"CP");
+		Profil p3 = new Profil(1234,"DP");
+		Profil p4 = new Profil(1234,"DG");
+		Profil p5 = new Profil(1234,"DRH");
 		
 		Utilisateur user1 = new Utilisateur(22,"test","test2","test@test.com",06123345,1200.0,"test","test",p1.getLibelle());
 		listSalaires.add(user1.getSalaire());
@@ -32,6 +29,7 @@ public class App {
 		listSalaires.add(user4.getSalaire());
 		Utilisateur user5 = new Utilisateur(26,"test","test2","test@test.com",06123345,1600.0,"test","test",p5.getLibelle());
 		listSalaires.add(user5.getSalaire());
+		
 		
 		listUsers.add(user1);
 		listUsers.add(user2);
